@@ -66,7 +66,7 @@ module.exports.sendMessage = async (req, res, next) => {
   try {
     const { message, sender, otp, number, toId } = req.body;
     const from = "+15627845684";
-    const to = "+917374873022";
+    const to = "+91" + number;
     const text = message + " -" + sender;
 
     let newMessage;
