@@ -1,0 +1,32 @@
+.container {
+  height: 95%;
+  display: flex;
+  background-image: linear-gradient(to bottom, transparent, var(--purple));
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  color: var(--light);
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.actionButton {
+  background-color: var(--light);
+  padding: 5px 10px;
+  width: 50%;
+  margin: auto;
+  color: var(--purple);
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}

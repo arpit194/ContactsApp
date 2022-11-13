@@ -1,0 +1,50 @@
+.container {
+  height: 95%;
+  display: flex;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  color: var(--light);
+  font-size: 5em;
+  margin: auto;
+  animation: 1s rotate infinite linear;
+}
+
+.contacts {
+  height: 95%;
+  width: 100%;
+  margin-top: auto;
+  background-color: var(--darker);
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+  overflow: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  transition: 0.5s ease-in-out bottom;
+}
+
+.hide {
+  bottom: -100%;
+}
+
+.header {
+  color: var(--light);
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 auto;
+}

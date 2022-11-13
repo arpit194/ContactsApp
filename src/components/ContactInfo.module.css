@@ -1,0 +1,85 @@
+.container {
+  height: 95%;
+  width: 100%;
+  margin-top: auto;
+  background-color: var(--darker);
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 10px;
+  overflow: hidden;
+  position: relative;
+  bottom: -100%;
+  transition: 0.5s ease-in-out bottom;
+}
+
+.show {
+  bottom: 0% !important;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--light);
+  font-size: 2em;
+}
+
+.avatar {
+  background-color: var(--light);
+  font-size: 5em;
+  background-color: var(--purple);
+  width: fit-content;
+  color: var(--light);
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  color: var(--light);
+  align-items: center;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.number {
+  font-size: 1.5em;
+  font-weight: 200;
+  color: var(--lightPurple);
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  color: var(--light);
+  align-items: center;
+}
+
+.button {
+  background-color: var(--lightDark);
+  color: var(--light);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 3em;
+}
+
+.button:hover {
+  background-color: var(--purple);
+}

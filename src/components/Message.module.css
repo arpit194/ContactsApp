@@ -1,0 +1,52 @@
+.message {
+  padding: 10px;
+  background-color: var(--darkest);
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--lightPurple);
+  display: flex;
+  border-radius: 10px 10px 0px 0px;
+  color: var(--light);
+  cursor: pointer;
+  transition: 0.25s ease-in-out border;
+}
+
+.message:hover {
+  border: 2px solid var(--lightPurple);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.details {
+  padding: 0px 10px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.date {
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: var(--lightPurple);
+}
+
+.controls {
+  display: flex;
+  margin: auto;
+  margin-right: 0;
+  gap: 10px;
+  font-size: 1em;
+}
+
+.info:hover,
+.delete:hover {
+  color: var(--purple);
+}
